@@ -34,7 +34,13 @@ function App() {
     );
   };
 
-  const editTask = (taskId) => {};
+  const editTask = (taskId, newText) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === taskId ? { ...task, text: newText } : task
+      )
+    );
+  };
 
   return (
     <div className={styles.container}>
@@ -44,6 +50,7 @@ function App() {
         tasks={tasks}
         onDeleteTask={deleteTask}
         onToggleTaskDone={toggleTaskDone}
+        onEditTask={editTask}
       />
     </div>
   );

@@ -18,7 +18,7 @@ h2 {
 ul {
   list-style-type: none;
   padding: 0;
-  width: 500px;
+  width: 650px;
 }
 
 li {
@@ -31,6 +31,11 @@ li {
   align-items: center;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
 }
 
 span {
@@ -72,4 +77,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #231b7a;
+}
+
+#buttonConfirm {
+  margin-right: 10px;
 }
